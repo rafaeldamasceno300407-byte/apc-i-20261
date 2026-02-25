@@ -1,0 +1,39 @@
+name: Validar Compilação (C)
+
+on:
+  pull_request:
+    branches: ["develop"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Instalar dependências
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc
+
+      - name: Validar arquivos de código por pasta
+        run: |
+          FOLDERS=$(find ./praticas -mindepth 1 -maxdepth 1 -type d)
+
+          for folder in $FOLDERS; do
+            echo "Validando arquivos na pasta $folder..."
+            FILES=$(find "$folder" -name "*.c" -print0)
+
+            for file in $FILES; do
+              echo "Compilando $file..."
+              gcc "$file" -o "${file%.c}.out" -lm
+              
+              if [ $? -eq 0 ]; then
+                echo "✅ Arquivo $file compilado com sucesso!"
+              else
+                echo "❌ Erro ao compilar o arquivo $file"
+                exit 1
+              fi
+            done
+          done
