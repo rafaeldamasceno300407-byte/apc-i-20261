@@ -6,6 +6,7 @@ int main () {
     printf("o coseno de %lf é %f\n",n, cos(n)); //função coseno de um numero inteiro n
     printf("o seno de %lf é %f\n",n, sin(n)); //função seno de um numero inteiro n
     printf("o tangente de %lf é %f\n",n, tan(n)); //função tangente de um numero inteiro n
+    printf("/n)");
 
     return 0;
 
