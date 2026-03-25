@@ -36,30 +36,30 @@ int main() {
     float nota_MeF; // valor para nota da media final da disciplina 2
 
     nota_M1 = 6.0f; // valor para nota da atividade 1 da disciplina 2
-    nota_M2 = 5.0f;
-    nota_M3 = 4.0f;
-    nota_MeF = (nota_M1 + nota_M2 + nota_M3) / 3.0f;
+    nota_M2 = 5.0f; // valor para nota da atividade 2 da disciplina 2
+    nota_M3 = 4.0f; // valor para nota da atividade 3 da disciplina 2, que não foi realizada, então o valor é 0
+    nota_MeF = (nota_M1 + nota_M2 + nota_M3) / 3.0f; // valor para nota da media final da disciplina 2, calculada como a média das notas das atividades, considerando a atividade 3 como 0, pois não foi realizada
 
-    int codigo_disciplina_3 = 91;
-    float nota_N1;
-    float nota_N2;
-    float nota_N3;
-    float nota_MeFi;
+    int codigo_disciplina_3 = 91; // valor para codigo da disciplina 3
+    float nota_N1; // valor para nota da atividade 1 da disciplina 3
+    float nota_N2; // valor para nota da atividade 2 da disciplina 3
+    float nota_N3; // valor para nota da atividade 3 da disciplina 3
+    float nota_MeFi; // valor para nota da media final da disciplina 3
 
-    nota_N1 = 10.0f;
-    nota_N2 = 4.0f;
-    nota_N3 = 4.0f;
-    nota_MeFi = (nota_N1 + nota_N2 + nota_N3) / 3.0f;
+    nota_N1 = 10.0f; // valor para nota da atividade 1 da disciplina 3, que foi realizada, então o valor é 10
+    nota_N2 = 4.0f; // valor para nota da atividade 2 da disciplina 3, que foi realizada, então o valor é 4
+    nota_N3 = 4.0f; // valor para nota da atividade 3 da disciplina 3, que foi realizada, então o valor é 4
+    nota_MeFi = (nota_N1 + nota_N2 + nota_N3) / 3.0f; // valor para nota da media final da disciplina 3, calculada como a média das notas das atividades
 
 
 
-    printf ("===============================================================================\n");
-    printf ("                                 *  BOLETIM DE NOTAS  *                        \n");
-    printf ("===============================================================================\n");
-    printf ("%s   %s    A1    A2    A3          MF\n", Disciplina, Codigo);
-    printf ("%s  %05i               %5.1f  %5.1f   %5.1f     %5.1f\n", Materia_1, codigo_disciplina_1, nota_A1, nota_A2, nota_A3, nota_MF);
-    printf ("%s  %05i               %5.1f  %5.1f   %5.1f     %5.1f\n", Materia_2, codigo_disciplina_2, nota_M1, nota_M2, nota_M3, nota_MeF);
-    printf ("%s  %05i               %5.1f  %5.1f   %5.1f     %5.1f\n", Materia_3, codigo_disciplina_3, nota_N1, nota_N2, nota_N3, nota_MeFi);
+    printf ("===============================================================================\n"); // imprime uma linha de separação
+    printf ("                                 *  BOLETIM DE NOTAS  *                        \n"); // imprime o título do boletim
+    printf ("===============================================================================\n"); // imprime uma linha de separação
+    printf ("%s   %s    A1    A2    A3          MF\n", Disciplina, Codigo); // imprime os títulos das colunas, utilizando as variáveis para disciplina e codigo
+    printf ("%s  %05i               %5.1f  %5.1f   %5.1f     %5.1f\n", Materia_1, codigo_disciplina_1, nota_A1, nota_A2, nota_A3, nota_MF); // imprime os dados da disciplina 1, utilizando as variáveis para materia, codigo, notas das atividades e media final, formatando a saída para alinhar as colunas
+    printf ("%s  %05i               %5.1f  %5.1f   %5.1f     %5.1f\n", Materia_2, codigo_disciplina_2, nota_M1, nota_M2, nota_M3, nota_MeF); // imprime os dados da disciplina 2, utilizando as variáveis para materia, codigo, notas das atividades e media final, formatando a saída para alinhar as colunas
+    printf ("%s  %05i               %5.1f  %5.1f   %5.1f     %5.1f\n", Materia_3, codigo_disciplina_3, nota_N1, nota_N2, nota_N3, nota_MeFi); // imprime os dados da disciplina 3, utilizando as variáveis para materia, codigo, notas das atividades e media final, formatando a saída para alinhar as colunas
 
     return 0;
 }
