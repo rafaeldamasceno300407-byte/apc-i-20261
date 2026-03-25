@@ -18,24 +18,24 @@ int main() {
     char Materia_3[50] = "PRA CALCULO        "; // valores paras materia3, com 50 caracteres
     char MediaFinal[50] = "Media Final        "; // valores para media final, com 50 caracteres
 
-    int codigo_disciplina_1 = 118;
-    float nota_A1;
-    float nota_A2;
-    float nota_A3;
-    float nota_MF;
+    int codigo_disciplina_1 = 118; // valor para codigo da disciplina 1
+    float nota_A1; // valor para nota da atividade 1 da disciplina 1
+    float nota_A2; // valor para nota da atividade 2 da disciplina 1
+    float nota_A3; // valor para nota da atividade 3 da disciplina 1
+    float nota_MF; // valor para nota da media final da disciplina 1
 
-    nota_A1 = 5.2f;
-    nota_A2 = 7.3f;
-    nota_A3 = 6.0f;
-    nota_MF = (nota_A1 + nota_A2 + nota_A3) / 3.0f;
+    nota_A1 = 5.2f; // valor para nota da atividade 1 da disciplina 1
+    nota_A2 = 7.3f; // valor para nota da atividade 2 da disciplina 1
+    nota_A3 = 6.0f; // valor para nota da atividade 3 da disciplina 1
+    nota_MF = (nota_A1 + nota_A2 + nota_A3) / 3.0f; // valor para nota da media final da disciplina 1, calculada como a média das notas das atividades
     
-    int codigo_disciplina_2 = 257;
-    float nota_M1;
-    float nota_M2;
-    float nota_M3;
-    float nota_MeF;
+    int codigo_disciplina_2 = 257; // valor para codigo da disciplina 2
+    float nota_M1; // valor para nota da atividade 1 da disciplina 2
+    float nota_M2; // valor para nota da atividade 2 da disciplina 2
+    float nota_M3; // valor para nota da atividade 3 da disciplina 2
+    float nota_MeF; // valor para nota da media final da disciplina 2
 
-    nota_M1 = 6.0f;
+    nota_M1 = 6.0f; // valor para nota da atividade 1 da disciplina 2
     nota_M2 = 5.0f;
     nota_M3 = 4.0f;
     nota_MeF = (nota_M1 + nota_M2 + nota_M3) / 3.0f;
