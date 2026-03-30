@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
 
-    printf("ola_mundo\n");
+    printf("Ola_mundo\n");
 
     return 0;
 }
