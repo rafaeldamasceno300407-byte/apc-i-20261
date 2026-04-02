@@ -9,13 +9,13 @@ int main() {
     char genero = 'M'; // Variável do tipo caractere
     float peso = 72.825; // Variável do tipo ponto flutuante
 
-    Printf ("Qual a sua altura? ");
+    printf ("Qual a sua altura? ");
      scanf("%f", &altura); 
 
-    Printf ("Qual o seu gênero? ");
+    printf ("Qual o seu gênero? ");
      scanf(" %c", &genero); 
 
-    Printf ("Qual o seu peso? ");
+    printf ("Qual o seu peso? ");
     scanf("%f", &peso); 
     
     printf("Altura: %.2f\n", altura);
