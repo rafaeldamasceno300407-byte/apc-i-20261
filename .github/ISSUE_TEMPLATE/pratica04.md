@@ -27,7 +27,7 @@ git checkout -b feature/pratica04
 1. No painel esquerdo do VSCode, localize a pasta `praticas`.
 2. Crie uma nova pasta chamada `pratica04`.
 3. Desenvolva os arquivos solicitados:
-- `leia_caracteres.c`: Ler um caractere digitado pelo usuário e imprimir o caractere informado e seu respectivo código na tabela **ASCII**;
+- `leia_caracteres.c`:Ler um caractere digitado pelo usuário e imprimir o caractere informado e seu respectivo código na tabela **ASCII** ;
 - `leia_inteiros.c`: Ler dois números inteiros fornecidos pelo usuário e exibir os valores lidos;
 - `leia_decimais.c`: Ler duas notas de um aluno fornecidas pelo usuário e exibir os valores lidos;
 - `leia_dados.c`: Ler a idade, a altura (ex.: `1.75`), o sexo (`M` ou `F`) e o peso (ex.: `72.825` de uma pessoa e exibir todas as informações organizadas em formato de ficha cadastral.
