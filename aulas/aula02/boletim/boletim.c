@@ -15,7 +15,7 @@ int main() {
     char Codigo[50] = "Codigo            "; // valores para codigo, com 50 caracteres
     char Materia_1[50] = "APC 1              "; // valores paras materia1, com 50 caracteres
     char Materia_2[50] = "MATEMATICA DISCRETA"; // valores paras materia2, com 50 caracteres
-    char Materia_3[50] = "PRA CALCULO        "; // valores paras materia3, com 50 caracteres
+    char Materia_3[50] = "PRE CALCULO        "; // valores paras materia3, com 50 caracteres
     char MediaFinal[50] = "Media Final        "; // valores para media final, com 50 caracteres
 
     int codigo_disciplina_1 = 118; // valor para codigo da disciplina 1
@@ -53,13 +53,13 @@ int main() {
 
 
 
-    printf ("===============================================================================\n"); // imprime uma linha de separação
-    printf ("                                 *  BOLETIM DE NOTAS  *                        \n"); // imprime o título do boletim
-    printf ("===============================================================================\n"); // imprime uma linha de separação
-    printf ("%s   %s    A1    A2    A3          MF\n", Disciplina, Codigo); // imprime os títulos das colunas, utilizando as variáveis para disciplina e codigo
-    printf ("%s  %05i               %5.1f  %5.1f   %5.1f     %5.1f\n", Materia_1, codigo_disciplina_1, nota_A1, nota_A2, nota_A3, nota_MF); // imprime os dados da disciplina 1, utilizando as variáveis para materia, codigo, notas das atividades e media final, formatando a saída para alinhar as colunas
-    printf ("%s  %05i               %5.1f  %5.1f   %5.1f     %5.1f\n", Materia_2, codigo_disciplina_2, nota_M1, nota_M2, nota_M3, nota_MeF); // imprime os dados da disciplina 2, utilizando as variáveis para materia, codigo, notas das atividades e media final, formatando a saída para alinhar as colunas
-    printf ("%s  %05i               %5.1f  %5.1f   %5.1f     %5.1f\n", Materia_3, codigo_disciplina_3, nota_N1, nota_N2, nota_N3, nota_MeFi); // imprime os dados da disciplina 3, utilizando as variáveis para materia, codigo, notas das atividades e media final, formatando a saída para alinhar as colunas
+    printf ("===============================================================================\n");
+    printf ("                                 *  BOLETIM DE NOTAS  *                        \n");
+    printf ("===============================================================================\n");
+    printf ("%-20s  %5s    A1    A2    A3       MF\n", "Disciplina", "Codigo");
+    printf ("%-20s  %05i  %5.1f  %5.1f  %5.1f    %5.1f\n", Materia_1, codigo_disciplina_1, nota_A1, nota_A2, nota_A3, nota_MF);
+    printf ("%-20s  %05i  %5.1f  %5.1f  %5.1f    %5.1f\n", Materia_2, codigo_disciplina_2, nota_M1, nota_M2, nota_M3, nota_MeF);
+    printf ("%-20s  %05i  %5.1f  %5.1f  %5.1f    %5.1f\n", Materia_3, codigo_disciplina_3, nota_N1, nota_N2, nota_N3, nota_MeFi);
 
     return 0;
 }

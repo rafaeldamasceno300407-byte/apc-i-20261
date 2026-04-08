@@ -31,7 +31,7 @@ git checkout -b feature/pratica02
 - `imprima_inteiros.c`: Imprimir os números `10`, `-5` e `00004`;
 - `imprima_decimais.c`: imprimir o número `3.1415926` com todas as casas e também com apenas duas casas;
 - `imprima_formatado.c`: imprimir um cupom fiscal conforme layout abaixo:
-```text
+```textgit checkout -b feature/pratica02
 ==============================
       N O T A    L E G A L
 ==============================
