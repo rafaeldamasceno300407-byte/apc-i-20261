@@ -66,6 +66,6 @@ praticas/
 └── pratica04/
     ├── leia_caracteres.c
     ├── leia_dados.c
-    ├── leia_decimais.c
+    ├── leia_decimais.c 
     └── leia_inteiros.c
 ```
