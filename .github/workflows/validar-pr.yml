@@ -23,7 +23,7 @@ jobs:
 
           for folder in $FOLDERS; do
             echo "Validando arquivos na pasta $folder..."
-            FILES=$(find "$folder" -name "*.c" -print0)
+            FILES=$(find "$folder" -name "*.c")
 
             for file in $FILES; do
               echo "Compilando $file..."
