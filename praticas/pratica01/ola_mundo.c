@@ -1,5 +1,5 @@
 #include <stdio.h>
-feature/pratica01
+//feature/pratica01
 int main() {
 
     printf("Ola, Mundo!\n");
