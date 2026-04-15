@@ -6,9 +6,14 @@ int main () {
 
     int num1;
     printf ("Digite um numero inteiro:");
-    scanf ('%i', &num1);
+    scanf ("%i", &num1);
+    while (getchar() != '\n');
+    
+    printf ("incremento1: %i\n", num1++);
+    printf ("incremento2: %i\n", ++num1);
+    printf ("decremento1: %i\n", num1--);
+    printf ("decremento2: %i\n", --num1);
 
-    printf ("incremento: %i\n", ++num1 num1++);
 
     return 0;
 }
