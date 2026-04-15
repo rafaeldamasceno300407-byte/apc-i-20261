@@ -1,8 +1,8 @@
 #include <stdio.h>
-feature/pratica01
+
 int main() {
 
-    printf("Ola, Mundo!\n");
+    printf("%f\n", 3.1415926);
     
     return 0;
 }
