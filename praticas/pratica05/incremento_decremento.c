@@ -1,14 +1,12 @@
 #include <stdio.h>
 
-int main () {
-
-    //Ler um número inteiro e exibir os resultados das operações de incremento e decremento nas formas pré-fixada e pós-fixada
-
+int main() {
     int num1;
-    printf ("Digite um numero inteiro:");
-    scanf ('%i', &num1);
+    printf("Digite um numero: ");
+    scanf("%i", &num1); // Corrigido para aspas duplas
 
-    printf ("incremento: %i\n", ++num1 num1++);
-
+    // Se a ideia era mostrar o pré e o pós incremento, precisa da vírgula:
+    printf("incremento: %i e depois %i\n", ++num1, num1++); 
+    
     return 0;
 }
