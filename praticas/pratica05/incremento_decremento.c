@@ -8,7 +8,8 @@ int main () {
     printf ("Digite um numero inteiro:");
     scanf ('%i', &num1);
 
-    printf ("incremento: %i\n", ++num1 num1++);
+    printf ("incremento: %i\n", ++num1);
+    printf ("incremento: %i\n", num1++); 
 
     return 0;
 }
