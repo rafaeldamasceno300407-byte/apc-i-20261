@@ -7,7 +7,7 @@ int main() {
     int inteiro = 0;
     unsigned long long int fatorial = 1;
     printf("Digite um numero inteiro para o calculo de fatorial:");
-    scanf("%i/nz", &inteiro);
+    scanf("%i/n", &inteiro);
 
     if (inteiro < 0) {
         printf("Coloque um valor com fatorial valido.");
