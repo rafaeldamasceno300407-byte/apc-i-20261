@@ -47,8 +47,8 @@ int main() {
         for(int j = 0; j < 3; j++) {
             printf("[%i] ", tabela[i][j]); // Imprime os números lado a lado
         }
-        printf("\n"); // CORREÇÃO: Quando termina uma linha (j), pula para a próxima linha da tela (i)
-    } // CORREÇÃO: Fechando o loop das linhas (i) aqui
+        printf("\n"); 
+    } 
 
     return 0;
 }
